@@ -1,0 +1,33 @@
+### Check Server
+GET http://localhost:5000/
+
+###
+
+### Get Customers
+GET http://localhost:5000/customers
+
+###
+
+### Create Customer
+POST http://localhost:5000/customers
+Content-Type: application/json
+
+{
+    "name": "John"
+}
+### Purchase
+POST http://localhost:5000/customers/1/purchase
+Content-Type: application/json
+
+{
+    "amount": 250
+}
+### Add Bonus
+POST http://localhost:5000/customers/1/bonus
+Content-Type: application/json
+
+{
+    "bonus": 50
+}
+### Summary
+GET http://localhost:5000/summary
